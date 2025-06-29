@@ -14,6 +14,10 @@ on:
 jobs:
   # This workflow contains a single job called "call"
   call_semgrep:
+    # permissions for semgrep
+    permissions:
+      actions: read
+      security-events: write
     # The link to semgrep
     uses: ./.github/workflows/semgrep.yml
-   
+ 
